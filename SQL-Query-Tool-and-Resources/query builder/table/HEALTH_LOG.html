@@ -1,0 +1,2501 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="../dbdoc.js" type="text/javascript"></script>
+<link href="../dbdoc.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">HEALTH_LOG</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Columns</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Constraints</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Grants</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistics</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Triggers</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dependencies</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Details</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Indexes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">HLG_OID</td>
+<td class="currentcell">VARCHAR2(14&nbsp;CHAR)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>HLG_PSN_OID</td>
+<td>VARCHAR2(14&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>2</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>HLG_SKL_OID</td>
+<td>VARCHAR2(14&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>3</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>HLG_DATE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>HLG_TIME_IN</td>
+<td>TIMESTAMP(6)</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>HLG_TIME_OUT</td>
+<td>TIMESTAMP(6)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>HLG_VISIT_TYPE</td>
+<td>VARCHAR2(20&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>HLG_LOCATION_CODE</td>
+<td>VARCHAR2(20&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>8</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>HLG_STF_OID_REFERRAL</td>
+<td>VARCHAR2(14&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>9</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>HLG_STF_OID_RESPONSIBLE</td>
+<td>VARCHAR2(14&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>HLG_NOTES</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>HLG_TEMPERATURE</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>HLG_BP_SYSTOLIC</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>HLG_BP_DIASTOLIC</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>HLG_PULSE</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>HLG_PULSE_TYPE</td>
+<td>VARCHAR2(20&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>HLG_FIELDA_001</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>HLG_FIELDA_002</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>HLG_FIELDA_003</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>HLG_FIELDA_004</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>HLG_FIELDA_005</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>HLG_FIELDA_006</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>HLG_FIELDA_007</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>HLG_FIELDA_008</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>HLG_FIELDA_009</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>HLG_FIELDA_010</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>HLG_FIELDA_011</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>HLG_FIELDA_012</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>HLG_FIELDA_013</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>HLG_FIELDA_014</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>HLG_FIELDA_015</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>HLG_FIELDA_016</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>HLG_FIELDA_017</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>HLG_FIELDA_018</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>34</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>HLG_FIELDA_019</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>35</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>HLG_FIELDA_020</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>36</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>HLG_FIELDA_021</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>HLG_FIELDA_022</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>HLG_FIELDA_023</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>HLG_FIELDA_024</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>HLG_FIELDA_025</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>HLG_FIELDA_026</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>HLG_FIELDA_027</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>HLG_FIELDA_028</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>HLG_FIELDA_029</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>HLG_FIELDA_030</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>HLG_FIELDA_031</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>HLG_FIELDA_032</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>HLG_FIELDA_033</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>HLG_FIELDA_034</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>HLG_FIELDA_035</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>HLG_FIELDA_036</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>HLG_FIELDA_037</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>HLG_FIELDA_038</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>HLG_FIELDA_039</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>HLG_FIELDA_040</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>HLG_FIELDA_041</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>HLG_FIELDA_042</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>HLG_FIELDA_043</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>HLG_FIELDA_044</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 60)">
+<td>HLG_FIELDA_045</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>61</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 61)">
+<td>HLG_FIELDA_046</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>62</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 62)">
+<td>HLG_FIELDA_047</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>63</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 63)">
+<td>HLG_FIELDA_048</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>64</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 64)">
+<td>HLG_FIELDA_049</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>65</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 65)">
+<td>HLG_FIELDA_050</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>66</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 66)">
+<td>HLG_FIELDA_051</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>67</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 67)">
+<td>HLG_FIELDA_052</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>68</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 68)">
+<td>HLG_FIELDA_053</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>69</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 69)">
+<td>HLG_FIELDA_054</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>70</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 70)">
+<td>HLG_FIELDA_055</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>71</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 71)">
+<td>HLG_FIELDA_056</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>72</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 72)">
+<td>HLG_FIELDA_057</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>73</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 73)">
+<td>HLG_FIELDA_058</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>74</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 74)">
+<td>HLG_FIELDA_059</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>75</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 75)">
+<td>HLG_FIELDA_060</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>76</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 76)">
+<td>HLG_FIELDA_061</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>77</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 77)">
+<td>HLG_FIELDA_062</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>78</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 78)">
+<td>HLG_FIELDA_063</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>79</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 79)">
+<td>HLG_FIELDA_064</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>80</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 80)">
+<td>HLG_FIELDA_065</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>81</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 81)">
+<td>HLG_FIELDA_066</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>82</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 82)">
+<td>HLG_FIELDA_067</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>83</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 83)">
+<td>HLG_FIELDA_068</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>84</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 84)">
+<td>HLG_FIELDA_069</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>85</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 85)">
+<td>HLG_FIELDA_070</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>86</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 86)">
+<td>HLG_FIELDA_071</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>87</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 87)">
+<td>HLG_FIELDA_072</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>88</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 88)">
+<td>HLG_FIELDA_073</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>89</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 89)">
+<td>HLG_FIELDA_074</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>90</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 90)">
+<td>HLG_FIELDA_075</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>91</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 91)">
+<td>HLG_FIELDA_076</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>92</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 92)">
+<td>HLG_FIELDA_077</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>93</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 93)">
+<td>HLG_FIELDA_078</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>94</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 94)">
+<td>HLG_FIELDA_079</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>95</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 95)">
+<td>HLG_FIELDA_080</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>96</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 96)">
+<td>HLG_FIELDA_081</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>97</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 97)">
+<td>HLG_FIELDA_082</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>98</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 98)">
+<td>HLG_FIELDA_083</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>99</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 99)">
+<td>HLG_FIELDA_084</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>100</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 100)">
+<td>HLG_FIELDA_085</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>101</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 101)">
+<td>HLG_FIELDA_086</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>102</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 102)">
+<td>HLG_FIELDA_087</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>103</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 103)">
+<td>HLG_FIELDA_088</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>104</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 104)">
+<td>HLG_FIELDA_089</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>105</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 105)">
+<td>HLG_FIELDA_090</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>106</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 106)">
+<td>HLG_FIELDB_001</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>107</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 107)">
+<td>HLG_FIELDB_002</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>108</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 108)">
+<td>HLG_FIELDB_003</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>109</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 109)">
+<td>HLG_FIELDB_004</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>110</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 110)">
+<td>HLG_FIELDB_005</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>111</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 111)">
+<td>HLG_FIELDB_006</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>112</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 112)">
+<td>HLG_FIELDB_007</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>113</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 113)">
+<td>HLG_FIELDB_008</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>114</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 114)">
+<td>HLG_FIELDB_009</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>115</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 115)">
+<td>HLG_FIELDB_010</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>116</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 116)">
+<td>HLG_FIELDB_011</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>117</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 117)">
+<td>HLG_FIELDB_012</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>118</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 118)">
+<td>HLG_FIELDB_013</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>119</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 119)">
+<td>HLG_FIELDB_014</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>120</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 120)">
+<td>HLG_FIELDB_015</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>121</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 121)">
+<td>HLG_FIELDB_016</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>122</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 122)">
+<td>HLG_FIELDB_017</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>123</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 123)">
+<td>HLG_FIELDB_018</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>124</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 124)">
+<td>HLG_FIELDB_019</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>125</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 125)">
+<td>HLG_FIELDB_020</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>126</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 126)">
+<td>HLG_FIELDB_021</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>127</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 127)">
+<td>HLG_FIELDB_022</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>128</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 128)">
+<td>HLG_FIELDB_023</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>129</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 129)">
+<td>HLG_FIELDB_024</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>130</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 130)">
+<td>HLG_FIELDB_025</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>131</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 131)">
+<td>HLG_FIELDB_026</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>132</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 132)">
+<td>HLG_FIELDB_027</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>133</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 133)">
+<td>HLG_FIELDB_028</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>134</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 134)">
+<td>HLG_FIELDB_029</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>135</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 135)">
+<td>HLG_FIELDB_030</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>136</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 136)">
+<td>HLG_FIELDB_031</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>137</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 137)">
+<td>HLG_FIELDB_032</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>138</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 138)">
+<td>HLG_FIELDB_033</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>139</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 139)">
+<td>HLG_FIELDB_034</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>140</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 140)">
+<td>HLG_FIELDB_035</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>141</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 141)">
+<td>HLG_FIELDB_036</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>142</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 142)">
+<td>HLG_FIELDB_037</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>143</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 143)">
+<td>HLG_FIELDB_038</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>144</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 144)">
+<td>HLG_FIELDB_039</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>145</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 145)">
+<td>HLG_FIELDB_040</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>146</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 146)">
+<td>HLG_FIELDB_041</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>147</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 147)">
+<td>HLG_FIELDB_042</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>148</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 148)">
+<td>HLG_FIELDB_043</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>149</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 149)">
+<td>HLG_FIELDB_044</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>150</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 150)">
+<td>HLG_FIELDB_045</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>151</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 151)">
+<td>HLG_FIELDB_046</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>152</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 152)">
+<td>HLG_FIELDB_047</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>153</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 153)">
+<td>HLG_FIELDB_048</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>154</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 154)">
+<td>HLG_FIELDB_049</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>155</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 155)">
+<td>HLG_FIELDB_050</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>156</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 156)">
+<td>HLG_FIELDB_051</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>157</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 157)">
+<td>HLG_FIELDB_052</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>158</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 158)">
+<td>HLG_FIELDB_053</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>159</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 159)">
+<td>HLG_FIELDB_054</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>160</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 160)">
+<td>HLG_FIELDB_055</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>161</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 161)">
+<td>HLG_FIELDB_056</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>162</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 162)">
+<td>HLG_FIELDB_057</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>163</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 163)">
+<td>HLG_FIELDB_058</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>164</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 164)">
+<td>HLG_FIELDB_059</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>165</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 165)">
+<td>HLG_FIELDB_060</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>166</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 166)">
+<td>HLG_FIELDB_061</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>167</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 167)">
+<td>HLG_FIELDB_062</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>168</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 168)">
+<td>HLG_FIELDB_063</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>169</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 169)">
+<td>HLG_FIELDB_064</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>170</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 170)">
+<td>HLG_FIELDB_065</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>171</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 171)">
+<td>HLG_FIELDB_066</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>172</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 172)">
+<td>HLG_FIELDB_067</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>173</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 173)">
+<td>HLG_FIELDB_068</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>174</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 174)">
+<td>HLG_FIELDB_069</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>175</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 175)">
+<td>HLG_FIELDB_070</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>176</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 176)">
+<td>HLG_FIELDB_071</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>177</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 177)">
+<td>HLG_FIELDB_072</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>178</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 178)">
+<td>HLG_FIELDB_073</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>179</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 179)">
+<td>HLG_FIELDB_074</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>180</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 180)">
+<td>HLG_FIELDB_075</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>181</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 181)">
+<td>HLG_FIELDB_076</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>182</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 182)">
+<td>HLG_FIELDB_077</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>183</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 183)">
+<td>HLG_FIELDB_078</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>184</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 184)">
+<td>HLG_FIELDB_079</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>185</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 185)">
+<td>HLG_FIELDB_080</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>186</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 186)">
+<td>HLG_FIELDB_081</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>187</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 187)">
+<td>HLG_FIELDB_082</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>188</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 188)">
+<td>HLG_FIELDB_083</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>189</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 189)">
+<td>HLG_FIELDB_084</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>190</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 190)">
+<td>HLG_FIELDB_085</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>191</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 191)">
+<td>HLG_FIELDB_086</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>192</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 192)">
+<td>HLG_FIELDB_087</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>193</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 193)">
+<td>HLG_FIELDB_088</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>194</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 194)">
+<td>HLG_FIELDB_089</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>195</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 195)">
+<td>HLG_FIELDB_090</td>
+<td>VARCHAR2(25&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>196</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 196)">
+<td>HLG_FIELDC_001</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>197</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 197)">
+<td>HLG_FIELDC_002</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>198</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 198)">
+<td>HLG_FIELDC_003</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>199</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 199)">
+<td>HLG_FIELDC_004</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>200</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 200)">
+<td>HLG_FIELDC_005</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>201</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 201)">
+<td>HLG_FIELDC_006</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>202</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 202)">
+<td>HLG_FIELDC_007</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>203</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 203)">
+<td>HLG_FIELDC_008</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>204</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 204)">
+<td>HLG_FIELDC_009</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>205</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 205)">
+<td>HLG_FIELDC_010</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>206</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 206)">
+<td>HLG_FIELDC_011</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>207</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 207)">
+<td>HLG_FIELDC_012</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>208</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 208)">
+<td>HLG_FIELDC_013</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>209</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 209)">
+<td>HLG_FIELDC_014</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>210</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 210)">
+<td>HLG_FIELDC_015</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>211</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 211)">
+<td>HLG_FIELDC_016</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>212</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 212)">
+<td>HLG_FIELDC_017</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>213</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 213)">
+<td>HLG_FIELDC_018</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>214</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 214)">
+<td>HLG_FIELDC_019</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>215</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 215)">
+<td>HLG_FIELDC_020</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>216</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 216)">
+<td>HLG_FIELDD_001</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>217</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 217)">
+<td>HLG_FIELDD_002</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>218</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 218)">
+<td>HLG_FIELDD_003</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>219</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 219)">
+<td>HLG_FIELDD_004</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>220</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 220)">
+<td>HLG_FIELDD_005</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>221</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 221)">
+<td>HLG_FIELDD_006</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>222</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 222)">
+<td>HLG_FIELDD_007</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>223</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 223)">
+<td>HLG_FIELDD_008</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>224</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 224)">
+<td>HLG_FIELDD_009</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>225</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 225)">
+<td>HLG_FIELDD_010</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>226</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 226)">
+<td>HLG_PRIMARY_COMPLAINT_CODE</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>227</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 227)">
+<td>HLG_PRIMARY_TREATMENT_CODE</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>228</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 228)">
+<td>HLG_PRIMARY_ACTION_CODE</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>229</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 229)">
+<td>HLG_SECONDARY_COMPLAINT_CODES</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>230</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 230)">
+<td>HLG_SECONDARY_TREATMENT_CODES</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>231</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 231)">
+<td>HLG_SECONDARY_ACTION_CODES</td>
+<td>CLOB</td>
+<td>Yes</td>
+<td>null</td>
+<td>232</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 232)">
+<td>HLG_STATUS</td>
+<td>VARCHAR2(20&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>233</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 233)">
+<td>HLG_NAME_VIEW</td>
+<td>VARCHAR2(60&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>234</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 234)">
+<td>HLG_LAST_MODIFIED</td>
+<td>NUMBER(14,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>235</td>
+<td>null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">HLG_PK</td>
+<td class="currentcell">Primary_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">24-SEP-18</td>
+<td class="currentcell">null</td>
+<td class="currentcell">HLG_PK</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>SYS_C008772</td>
+<td>Check</td>
+<td>"HLG_OID"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>24-SEP-18</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Columns</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">HLG_OID</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">HLG_OID</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Column Statistics</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>References</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>24-SEP-18</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>24-SEP-18</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>X2ASPEN</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>HEALTH_LOG</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>USERS</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>1048576</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>null</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>null</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 10, 0)" class="currentrow">
+<td class="currentcell">X2ASPEN</td>
+<td class="currentcell">HLG_PK</td>
+<td class="currentcell">UNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">HLG_OID</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">X2ASPEN</td>
+<td class="currentcell">HLG_PK</td>
+<td class="currentcell">X2ASPEN</td>
+<td class="currentcell">HEALTH_LOG</td>
+<td class="currentcell">HLG_OID</td>
+<td class="currentcell">1</td>
+<td class="currentcell">56</td>
+<td class="currentcell">14</td>
+<td class="currentcell">ASC</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
